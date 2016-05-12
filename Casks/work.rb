@@ -14,9 +14,4 @@ cask 'work' do
   # Stuff I use all on computers
   depends_on cask: 'jeppesen-io/stations/shared'
 
-  postflight do
-    `git config --global user.name "Nelson Jeppesen"`
-    `git config --global user.email nelson@simplymeasured.com`
-  end
-
 end

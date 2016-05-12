@@ -9,9 +9,4 @@ cask 'home' do
   depends_on cask: 'steam'
   depends_on cask: 'jeppesen-io/stations/shared'
 
-  postflight do
-    `git config --global user.name "Nelson Jeppesen"`
-    `git config --global user.email nelson.jeppesen@gmail.com`
-  end
-
 end
