@@ -1,5 +1,5 @@
 cask 'shared' do
-  version '0.5'
+  version '0.6'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/shared.rb'
   sha256 :no_check
   container type: :naked
@@ -116,7 +116,7 @@ cask 'shared' do
     `defaults write com.apple.dock wvous-bl-modifier   -int 0`
 
     # Send the dock to the left of the screen
-    `defaults write com.apple.dock  orientation -string "left"`
+    `defaults write com.apple.dock  orientation -string "right"`
 
     # Set the size of icons in the dock
     `defaults write com.apple.dock tilesize -int 50`
