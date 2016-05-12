@@ -1,5 +1,5 @@
 cask 'shared' do
-  version '0.4'
+  version '0.5'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/shared.rb'
   sha256 :no_check
   container type: :naked
@@ -9,7 +9,6 @@ cask 'shared' do
   depends_on formula: 'curl'
   depends_on formula: 'ipcalc'
   depends_on formula: 'jq'
-  depends_on formula: 'rbenv'
   depends_on formula: 'rtv'
   depends_on formula: 's3cmd'
   depends_on formula: 'watch'
