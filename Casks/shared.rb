@@ -22,11 +22,11 @@ cask 'shared' do
   depends_on cask: 'visual-studio-code'
 
   # My brew/cask wrappers
-  depends_on cask: 'jeppesen-io/iterm/iterm'
-  depends_on cask: 'jeppesen-io/git/git'
-  depends_on cask: 'jeppesen-io/neovim/neovim'
-  depends_on cask: 'jeppesen-io/bash/bash'
-  depends_on cask: 'jeppesen-io/hammerspoon/hammerspoon'
+  depends_on cask: 'jeppesen-io/iterm/my-iterm'
+  depends_on cask: 'jeppesen-io/git/my-git'
+  depends_on cask: 'jeppesen-io/neovim/my-neovim'
+  depends_on cask: 'jeppesen-io/bash/my-bash'
+  depends_on cask: 'jeppesen-io/hammerspoon/my-hammerspoon'
 
   postflight do
 
