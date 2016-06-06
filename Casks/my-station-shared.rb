@@ -1,5 +1,5 @@
 cask 'my-station-shared' do
-  version '1.0'
+  version '1.1'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-shared.rb'
   sha256 :no_check
   container type: :naked
@@ -56,7 +56,7 @@ cask 'my-station-shared' do
     `launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null`
 
     # Disable “natural” (Lion-style) scrolling
-    #`defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false`
+    `defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false`
 
     # Enable subpixel font rendering on non-Apple LCDs
     `defaults write NSGlobalDomain AppleFontSmoothing -int 2`
