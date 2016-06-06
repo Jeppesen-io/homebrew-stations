@@ -1,6 +1,6 @@
-cask 'work' do
-  version '0.2'
-  url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/work.rb'
+cask 'my-station-work' do
+  version '1.0'
+  url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-work.rb'
   sha256 :no_check
   container type: :naked
   stage_only true
@@ -12,6 +12,6 @@ cask 'work' do
   depends_on cask: 'google-chrome-canary'
 
   # Stuff I use all on computers
-  depends_on cask: 'jeppesen-io/stations/shared'
+  depends_on cask: 'jeppesen-io/stations/my-station-shared'
 
 end
