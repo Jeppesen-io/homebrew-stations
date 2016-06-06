@@ -31,7 +31,7 @@ cask 'my-station-shared' do
   postflight do
 
     # Set all finder windows to list by default
-    `defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"`
+    `defaults write com.apple.finder FXPreferredViewStyle -string "clmv"`
     `find ~ -name .DS_Store -delete`
 
     # Never show the dock!
