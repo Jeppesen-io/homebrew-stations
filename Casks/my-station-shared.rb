@@ -30,6 +30,10 @@ cask 'my-station-shared' do
 
   postflight do
 
+    # Set all finder windows to list by default
+    `defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"`
+    `find ~ -name .DS_Store -delete`
+
     # Never show the dock!
     `defaults write com.apple.dock autohide-delay -float 0`
 
@@ -69,10 +73,6 @@ cask 'my-station-shared' do
 
     # Display full POSIX path as Finder window title
     `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true`
-
-    # Use list view in all Finder windows by default
-    # Four-letter codes for the other view modes: icnv, clmv, Flwv
-    `defaults write com.apple.finder FXPreferredViewStyle -string "clmv"`
 
     # Disable the warning before emptying the Trash
     `defaults write com.apple.finder WarnOnEmptyTrash -bool false`
@@ -123,6 +123,9 @@ cask 'my-station-shared' do
 
     # Restart dock
     `killall Dock`
+
+    # Restart finder
+    `killall Finder`
 
   end
 
