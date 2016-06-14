@@ -1,4 +1,4 @@
-class myosxdefaults < Formula
+class MyMacOsDefaults < Formula
   desc 'Various macOS UI tweaks'
 
   stable do
