@@ -1,5 +1,5 @@
 cask 'my-station-work' do
-  version '1.1'
+  version '1.2'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-work.rb'
   sha256 :no_check
   container type: :naked
@@ -18,5 +18,11 @@ cask 'my-station-work' do
 
   # Stuff I use all on computers
   depends_on cask: 'jeppesen-io/stations/my-station-shared'
+
+  postflight do
+
+    `pip install rackspace-novaclient`
+
+  end
 
 end
