@@ -1,5 +1,5 @@
 cask 'my-station-shared' do
-  version '1.6'
+  version '1.7'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-shared.rb'
   sha256 :no_check
   container type: :naked
@@ -21,6 +21,7 @@ cask 'my-station-shared' do
   depends_on cask: 'slack'
   depends_on cask: 'spotify'
   depends_on cask: 'visual-studio-code'
+  depends_on cask: 'yakyak'
 
   # My formulas
   depends_on formula: 'jeppesen-io/macos/my-macos'
