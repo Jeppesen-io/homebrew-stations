@@ -8,5 +8,5 @@ or
 
 Related homebrews I've created
 
-[my-bash](../homebrew-bash/)
+[my-bash](../../../homebrew-bash/)
 
