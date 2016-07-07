@@ -1,5 +1,5 @@
 cask 'my-goofy' do
-  version '1.0'
+  version '1.1'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-goofy.rb'
   sha256 :no_check
   container type: :naked
@@ -17,5 +17,6 @@ cask 'my-goofy' do
 
     # Add status bar
     `defaults write cc.buechele.Goofy showStatusItem -bool true`
+  end
 
 end
