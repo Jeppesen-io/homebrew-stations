@@ -1,5 +1,5 @@
 cask 'my-station-shared' do
-  version '1.9'
+  version '1.10'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-shared.rb'
   sha256 :no_check
   container type: :naked
@@ -9,6 +9,7 @@ cask 'my-station-shared' do
   depends_on formula: 'awscli'
   depends_on formula: 'curl'
   depends_on formula: 'ipcalc'
+  depends_on formula: 'ipython'
   depends_on formula: 'jq'
   depends_on formula: 'rtv'
   depends_on formula: 's3cmd'
