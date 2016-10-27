@@ -1,21 +1,9 @@
 cask 'my-station-shared' do
-  version '1.3'
+  version '1.4'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-shared.rb'
   sha256 :no_check
   container type: :naked
   stage_only true
-
-  # Common brews
-  depends_on formula: 'awscli'
-  depends_on formula: 'curl'
-  depends_on formula: 'ipcalc'
-  depends_on formula: 'jq'
-  depends_on formula: 'rbenv'
-  depends_on formula: 'ruby-build'
-  depends_on formula: 'rtv'
-  depends_on formula: 'ripgrep'
-  depends_on formula: 'watch'
-  depends_on formula: 'wget'
 
   # Common casks
   depends_on cask: 'google-chrome'
@@ -25,14 +13,10 @@ cask 'my-station-shared' do
   depends_on cask: 'visual-studio-code'
   depends_on cask: 'yakyak'
 
-  # My formulas
-  depends_on formula: 'jeppesen-io/macos/my-macos'
-  depends_on formula: 'jeppesen-io/git/my-git'
-  depends_on formula: 'jeppesen-io/neovim/my-neovim'
-  depends_on formula: 'jeppesen-io/bash/my-bash'
-
   # My casks
   depends_on cask:    'jeppesen-io/iterm/my-iterm'
   depends_on cask:    'jeppesen-io/hammerspoon/my-hammerspoon'
 
+  # All non-cask homebrews
+  depends_on formula: 'jeppesen-io/stations/my-base'
 end
