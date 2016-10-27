@@ -2,7 +2,7 @@ class MyBase < Formula
   desc 'Install all my Formulas'
   url 'https://github.com/Jeppesen-io/homebrew-stations/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-stations'
-  version '1.0'
+  version '1.1'
 
   bottle :unneeded
 
@@ -19,10 +19,10 @@ class MyBase < Formula
   depends_on 'wget'
 
   # My formulas
-  depends_on formula: 'jeppesen-io/macos/my-macos'
-  depends_on formula: 'jeppesen-io/git/my-git'
-  depends_on formula: 'jeppesen-io/neovim/my-neovim'
-  depends_on formula: 'jeppesen-io/zsh/my-zsh'
+  depends_on 'jeppesen-io/macos/my-macos'
+  depends_on 'jeppesen-io/git/my-git'
+  depends_on 'jeppesen-io/neovim/my-neovim'
+  depends_on 'jeppesen-io/zsh/my-zsh'
 
   def install
     # Prevent "empty install"
