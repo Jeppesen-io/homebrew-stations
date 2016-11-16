@@ -18,7 +18,7 @@ cask 'my-station-work' do
   # Stuff I use all on computers
   depends_on cask: 'jeppesen-io/stations/my-station-shared'
 
-  depends_on fomrula: 'python'
+  depends_on formula: 'python'
 
   postflight do
 
