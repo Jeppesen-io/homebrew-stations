@@ -2,7 +2,7 @@ class MyBase < Formula
   desc 'Install all my Formulas'
   url 'https://github.com/Jeppesen-io/homebrew-stations/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-stations'
-  version '1.6'
+  version '1.7'
 
   bottle :unneeded
 
@@ -16,6 +16,7 @@ class MyBase < Formula
   depends_on 'ruby-build'
   depends_on 'rtv'
   depends_on 'ripgrep'
+  depends_on 'todo-txt'
   depends_on 'watch'
   depends_on 'wget'
 
