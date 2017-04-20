@@ -2,7 +2,7 @@ class MyBase < Formula
   desc 'Install all my Formulas'
   url 'https://github.com/Jeppesen-io/homebrew-stations/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-stations'
-  version '1.3'
+  version '1.4'
 
   bottle :unneeded
 
@@ -18,6 +18,14 @@ class MyBase < Formula
   depends_on 'ripgrep'
   depends_on 'watch'
   depends_on 'wget'
+
+  # OSX tools suck!
+  depends_on 'coreutils'
+  depends_on 'findutils'
+  depends_on 'gnu-sed'
+  depends_on 'gawk'
+  depends_on 'gnutls'
+  depends_on 'grep'
 
   # My formulas
   depends_on 'jeppesen-io/bash/my-bash'
