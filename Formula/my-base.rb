@@ -2,7 +2,7 @@ class MyBase < Formula
   desc 'Install all my Formulas'
   url 'https://github.com/Jeppesen-io/homebrew-stations/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-stations'
-  version '1.5'
+  version '1.6'
 
   bottle :unneeded
 
@@ -21,13 +21,12 @@ class MyBase < Formula
 
   # OSX tools suck!
   depends_on 'coreutils'
+  depends_on 'gawk'
   depends_on 'findutils'  => 'with-default-names'
   depends_on 'gnu-sed'    => 'with-default-names'
-  depends_on 'gawk'
   depends_on 'grep'       => 'with-default-names'
 
   # My formulas
-  depends_on 'jeppesen-io/bash/my-bash'
   depends_on 'jeppesen-io/git/my-git'
   depends_on 'jeppesen-io/macos/my-macos'
   depends_on 'jeppesen-io/neovim/my-neovim'
