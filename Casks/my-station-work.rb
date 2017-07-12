@@ -12,9 +12,6 @@ cask 'my-station-work' do
   # Can use a different browser for personal work
   depends_on cask: 'caskroom/versions/google-chrome-canary'
 
-  # Sometimes it's helpful to test with a different browser
-  depends_on cask: 'firefox'
-
   # Stuff I use all on computers
   depends_on cask: 'jeppesen-io/stations/my-station-shared'
 
