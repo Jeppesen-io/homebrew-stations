@@ -13,7 +13,7 @@ cask 'my-station-work' do
   depends_on cask: 'caskroom/versions/google-chrome-canary'
 
   # Stuff I use all on computers
-  depends_on cask: 'jeppesen-io/stations/my-station-shared'
+  depends_on cask: 'jeppesen-io/stations/my-station'
 
   depends_on formula: 'python'
 

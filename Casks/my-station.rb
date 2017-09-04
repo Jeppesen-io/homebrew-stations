@@ -1,6 +1,6 @@
-cask 'my-station-shared' do
-  version '1.7'
-  url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station-shared.rb'
+cask 'my-station' do
+  version '1.0'
+  url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station.rb'
   sha256 :no_check
   container type: :naked
   stage_only true
