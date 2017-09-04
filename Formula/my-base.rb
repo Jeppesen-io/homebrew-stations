@@ -2,7 +2,7 @@ class MyBase < Formula
   desc 'Install all my Formulas'
   url 'https://github.com/Jeppesen-io/homebrew-stations/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-stations'
-  version '1.8'
+  version '1.9'
 
   bottle :unneeded
 
@@ -17,7 +17,6 @@ class MyBase < Formula
   depends_on 'rtv'
   depends_on 'ripgrep'
   depends_on 'watch'
-  depends_on 'wget'
 
   # OSX tools suck!
   depends_on 'coreutils'
