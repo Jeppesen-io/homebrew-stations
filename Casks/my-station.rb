@@ -1,6 +1,6 @@
 cask 'my-station' do
 
-  version '2.2'
+  version '2.3'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station.rb'
   sha256 :no_check
   container type: :naked
@@ -22,10 +22,14 @@ cask 'my-station' do
   depends_on cask: 'rambox'
   depends_on cask: 'spotify'
 
+  # Webdev work
+  depends_on formula: 'hugo'
+  depends_on formula: 'jpegoptim '
+  depends_on formula: 'optipng'
+
   # Common brews
   depends_on formula: 'awscli'
   depends_on formula: 'curl'
-  depends_on formula: 'hugo'
   depends_on formula: 'ipcalc'
   depends_on formula: 'jq'
   depends_on formula: 'nmap'
