@@ -1,6 +1,6 @@
 cask 'my-station' do
 
-  version '2.0'
+  version '2.1'
   url 'https://raw.githubusercontent.com/Jeppesen-io/homebrew-stations/master/Casks/my-station.rb'
   sha256 :no_check
   container type: :naked
@@ -37,8 +37,8 @@ cask 'my-station' do
   # OSX tools suck!
   depends_on formula: 'coreutils'
   depends_on formula: 'gawk'
-  depends_on formula: 'findutils'  => 'with-default-names'
-  depends_on formula: 'gnu-sed'    => 'with-default-names'
-  depends_on formula: 'grep'       => 'with-default-names'
+  depends_on formula: 'findutils'
+  depends_on formula: 'gnu-sed'
+  depends_on formula: 'grep'
 
 end
